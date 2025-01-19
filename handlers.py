@@ -47,7 +47,6 @@ def is_private(handler):
         if message.chat.type == 'private':
             return await handler(entity, *args, **kwargs)
         else:
-            # Optionally, you can send a message or log when the message is ignored
             # await message.answer("Bot only responds to private messages.")
             pass
     return wrapper
